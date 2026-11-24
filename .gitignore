@@ -1,0 +1,9 @@
+# Segredos e dados locais — NAO versionar
+.env
+config.json
+queue/
+out/
+.images/
+.image-repo/
+node_modules/
+logs/

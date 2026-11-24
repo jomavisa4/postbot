@@ -1,0 +1,21 @@
+{
+  "name": "postbot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "IA que cria posts (texto + card) para o 'dos 600 aos 1000' e publica no Facebook e Instagram via API oficial, com fila de aprovacao.",
+  "scripts": {
+    "start": "node server.mjs",
+    "auto": "node autopost.mjs",
+    "auto-now": "node autopost.mjs --now",
+    "auto-dry": "node autopost.mjs --now --dry",
+    "gerar": "node generate.mjs",
+    "gerar1": "node generate.mjs --count 1",
+    "token": "node bin/setup-token.mjs",
+    "publicar": "node bin/publicar.mjs",
+    "estudio": "node scripts/install-estudio.mjs"
+  },
+  "dependencies": {
+    "sharp": "^0.34.0"
+  }
+}
